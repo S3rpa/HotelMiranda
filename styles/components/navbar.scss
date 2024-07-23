@@ -1,0 +1,74 @@
+@import '../variables.scss';
+
+.navbar {
+    position: fixed;
+    display: inline-flex;
+    height: 4.4em;
+    width: 100%;
+    background-color: $white;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+    z-index: 4;
+
+    &__left {
+        display: inline-flex;
+        
+        &__menu {
+            width: 1.3em;
+            padding: 1em;
+        }
+
+        &__logo {
+            padding-inline: 1em;
+            display: inline-flex;
+            align-items: center;
+            gap: 1em;
+
+            img:first-child {
+                box-shadow: 0px 5px 10px 0px rgb(223, 223, 223);
+            }
+        }
+
+        &__hamburguer {
+            margin-left: 1.5em;
+            width: 1.25em;
+        }
+    }
+
+    &__right {
+        display: inline-flex;
+        padding-inline: 1em;
+        gap: 1.5em;
+    }
+
+    &__list {
+        position: fixed;
+        width: 100%;
+        background-color: $white;
+        top: 4.34em;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+        padding: 1em;
+        z-index: 3;
+
+        ul {
+            list-style: none;
+            font-family: "Archivo", sans-serif;
+            font-size: 1em;
+            font-weight: 400;
+
+            li {
+                padding-block: 0.5em;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
+}
