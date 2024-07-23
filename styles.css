@@ -60,6 +60,102 @@
   display: none;
 }
 
+.hero {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 2em 1em;
+  padding-block: 5em;
+  padding-top: 9em;
+}
+.hero__content {
+  max-width: 37em;
+  margin: 0 auto;
+}
+.hero__content h1 {
+  color: #FFFFFF;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.5em;
+  font-weight: 200;
+  margin: 0.5em 0;
+}
+.hero__content h4 {
+  color: #FFFFFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0.5em 0 2em;
+  letter-spacing: 2.8px;
+  line-height: 1em;
+  margin-bottom: 2.2em;
+  text-transform: uppercase;
+}
+.hero__content .btn {
+  display: inline-block;
+  padding: 0.75em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 0.5em;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+.hero__content .btn-primary {
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+}
+.hero__content .btn-secondary {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+.hero__content .btn:hover {
+  background-color: #ab966e;
+  color: #333;
+}
+
+.availability {
+  background-color: #444;
+  color: #FFFFFF;
+  padding: 2em 1em;
+  text-align: center;
+}
+.availability__date {
+  margin: 1em 0;
+}
+.availability__date label {
+  display: block;
+  font-family: "Archivo", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.availability__date input[type=date] {
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-bottom: 2px solid #BEAD8E;
+  width: 80%;
+}
+.availability .btn {
+  display: inline-block;
+  padding: 0.75em 2em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background-color 0.3s;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-right: 25%;
+}
+.availability .btn:hover {
+  background-color: #ab966e;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
