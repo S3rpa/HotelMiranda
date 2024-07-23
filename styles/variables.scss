@@ -1,3 +1,19 @@
 $white: #FFFFFF;
 $black: #111111;
 $black2: #000000;
+$black3: #333333;
+$black4:#222222;
+$beige: #BEAD8E;
+
+@mixin H1($theme: $white){
+    color: $theme;
+    font-family: 'Old Standard TT', serif;
+    font-size: 3.5em;
+    font-weight: 200;
+}
+@mixin H4($theme: $white){
+    color: $theme;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
