@@ -3,7 +3,9 @@ $black: #111111;
 $black2: #000000;
 $black3: #333333;
 $black4:#222222;
+$gris: #777777;
 $beige: #BEAD8E;
+$beige2: #BDAC8D;
 
 @mixin H1($theme: $white){
     color: $theme;
@@ -16,4 +18,11 @@ $beige: #BEAD8E;
     font-family: 'Archivo', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+@mixin parrafo($theme: $gris){
+    color: $theme;
+    font-family: 'Archivo',sans-serif;
+    font-size: 1em;
+    line-height: 24px;
 }

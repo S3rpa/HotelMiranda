@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.margen{
+    padding: 3em;
+    background-color: white;
+}
+.about-us{
+    background-color: #F9F9F9;
+    padding: 3em 1em;
+
+    &__content {
+        max-width: 37em;
+        margin: 0 auto;
+
+        h2 {
+            @include H1;
+            margin: 0.5em 0;
+            color: $black;
+        }
+
+        h4 {
+            @include H4;          
+            color: $gris;
+            margin: 0.5em 0 2em;
+            letter-spacing: 2.8px;            
+            line-height: 1em;
+            margin-bottom:2.2em;
+            text-transform: uppercase;
+        }
+        p{
+            @include parrafo;
+            text-align: justify;
+            margin-bottom: 2em;
+        }
+        .btn{
+            display: inline-block;
+            padding: 0.75em 2em;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin: 0.5em;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            background-color: $beige2;
+            color: $white;
+        }
+    }
+}
