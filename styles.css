@@ -109,10 +109,6 @@
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
 }
-.hero__content .btn:hover {
-  background-color: #ab966e;
-  color: #333;
-}
 
 .availability {
   background-color: #444;
@@ -151,9 +147,6 @@
   color: #FFFFFF;
   text-transform: uppercase;
   margin-right: 25%;
-}
-.availability .btn:hover {
-  background-color: #ab966e;
 }
 
 .margen {

@@ -46,11 +46,6 @@
                 color: $white;
                 border: 2px solid $white;
             }
-
-            &:hover {
-                background-color: darken($beige, 10%);
-                color: #333;
-            }
         }
     }
 }
@@ -95,9 +90,5 @@
         color: $white;
         text-transform: uppercase;
         margin-right: 25%;
-
-        &:hover {
-            background-color: darken($beige, 10%);
-        }
     }
 }
