@@ -32,11 +32,11 @@
                 <img src="./images/Lupa.png" alt="">
             </div>
             <div class="navbar__list--hidden">
-                <ul>
-                    <li><a href="./about-us.html"></a>About Us</li>               
-                    <li><a href="./rooms.html"></a>Rooms</li>
-                    <li><a href="./offers.html"></a>Offers</li>
-                    <li><a href="./contact.html"></a>Contact</li>
+                <ul id="menu">
+                    <li><a href="./about-us.html">About Us</a></li>               
+                    <li><a href="./rooms.html">Rooms</a></li>
+                    <li><a href="./offers.html">Offers</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>    
         </div>
@@ -68,7 +68,7 @@
         <!-- About-us section -->
     <div class="margen"></div>
     <section class="about-us">
-        <div class="about-us__content">
+        <article class="about-us__content">
             <h4>About us</h4>
             <h2>Discover Our Underground.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
@@ -76,8 +76,8 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <button class="btn">Book now</button>
-        </div>
-        <div class="about-us__team">
+        </article>
+        <article class="about-us__team">
             <img src="./images/team.jpg" class="teamImg">
             <div>
                 <picture>
@@ -88,8 +88,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit, sed do eiusmod tempor.</p>
             </div>
-        </div>
-        <div class="about-us__room">
+        </article>
+        <article class="about-us__room">
             <img src="./images/hotel.jpg" class="room-img">
             <div>
                 <img src="./images/calendar.png">
@@ -97,8 +97,28 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit, sed do eiusmod tempor.</p>
             </div>
-        </div>
+        </article>
     </section>
+
+    <!-- Rooms section -->
+     <section>
+        <article class="slider">
+            <h4>ROOMS</h4>
+            <h2>Hand Picked Rooms</h2>
+            <div class="swiper" id="swipper-rooms">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/room1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/room2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/room3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev" id="swiper-button-next-rooms"></div>
+                <div class="swiper-button-next" id="swiper-button-prev-rooms"></div>
+            </div>
+        </article>
+     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src='./scripts/menu.js' defer></script>
+    <script src="./scripts/swiper.js" defer></script>
 </body>
 </html>
