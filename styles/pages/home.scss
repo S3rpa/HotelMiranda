@@ -1,3 +1,156 @@
 @import '../components/navbar.scss';
 @import '../components/hero.scss';
-@import '../components/about-us.scss';
+@import '../components/swiper.scss';
+
+.margen {
+    padding: 3em;
+    background-color: white;
+}
+.about-us {
+    &__content {
+        max-width: 37em;
+        margin: 0 auto;
+        padding-bottom: 10em;
+        padding-inline: 1em;
+        background-color: #f9f9f9;
+        padding-top: 2em;
+
+        h2 {
+            @include H1;
+            margin: 0.5em 0;
+            color: $black;
+        }
+
+        h4 {
+            @include H4;
+            color: $gris;
+            margin: 0.5em 0 2em;
+            letter-spacing: 2.8px;
+            line-height: 1em;
+            margin-bottom: 2.2em;
+            text-transform: uppercase;
+        }
+        p {
+            @include parrafo;
+            text-align: justify;
+            margin-bottom: 2em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75em 2em;
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin: 0.5em;
+            transition: background-color 0.3s;
+            text-transform: uppercase;
+            background-color: $beige2;
+            color: $white;
+        }
+    }
+    &__team {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: auto;
+        width: fit-content;
+        max-width: 17em;
+        box-shadow: 0 5px 67px -70px rgb(0, 0, 0);
+        padding-bottom: 2.2em;
+        margin-bottom: 2em;
+
+        .teamImg {
+            width: 100%;
+            height: 15em;
+            margin-top: -7em;
+            margin-inline: auto;
+        }
+        picture {
+            position: relative;
+            img {
+                display: block;
+                padding: 3.2em;
+                padding-bottom: 2em;
+                margin: auto;
+            }
+            .mAgua {
+                position: absolute;
+                top: -1.2em;
+                left: 4.8em;
+            }
+        }
+        h4 {
+            @include H1;
+            color: $black;
+            font-size: 2em;
+            text-align: center;
+        }
+        p {
+            @include parrafo;
+            font-size: 1em;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 1em;
+        }
+    }
+    &__room {
+        margin-top: 3em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: auto;
+        width: fit-content;
+        max-width: 17em;
+        padding-bottom: 2.2em;
+        margin-bottom: 2em;
+
+        .room-img {
+            width: 100%;
+            height: 20em;
+            margin-inline: auto;
+        }
+        div{
+            width: 100%;
+            background-color: $black;
+            height: 20em;
+            img{
+                display: block;
+                padding: 3.2em;
+                padding-bottom: 2em;
+                margin: auto; 
+            }
+            h4{
+                @include H1;
+                font-size: 1.8em;
+                text-align: center;
+                color:$white;
+            }
+            p{
+                @include parrafo;
+                color: $white;
+                text-align: center;
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+            }
+        }
+        
+    }
+}
+.slider{
+    h2{
+        @include H1;
+        text-align: center;
+        color:$black4;
+        font-size: 3.5em;
+        margin-bottom: 1em;
+    }
+    h4{
+        @include H4;
+        text-align: center;
+        font-size: 0.8em;
+        letter-spacing: 2.8px;
+        color: $gris;
+        margin-bottom: 1em;
+    }
+}
